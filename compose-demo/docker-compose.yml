@@ -14,7 +14,7 @@ webc:
     - 80
 
 haproxy:
-  image: haproxy-override
+  build: haproxy/
   volumes:
    - ~/docker-101/compose-demo/haproxy/:/haproxy-override/
   links:
