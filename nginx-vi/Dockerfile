@@ -3,9 +3,11 @@ MAINTAINER Alex Kretzschmar <alex.kretzschmar@worldpay.com>
 
 RUN apt-get update && \
     apt-get install -y \
-      vim \
-      nano
+      curl \
+      nano \
+      vim
+     
 
-COPY newindex.html /usr/share/nginx/html/index.html
+COPY newindex.html /usr/share/nginx/html/newindex.html
 COPY Dockerfile /
 
